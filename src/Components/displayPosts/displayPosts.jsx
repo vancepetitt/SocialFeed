@@ -1,9 +1,22 @@
 const displayPosts = (props) => {
     return (  
-        <li>
-            {posts.userName}
-            {posts.postText}
-        </li>   
+        <div>
+            <h1>Feed</h1>
+            {props.parentPosts.map((posts) => {
+                return (
+                    <div>
+                    <li>
+                       Username: {posts.userName}
+                    </li> 
+                    <li>
+                       Post: {posts.postText}
+                    </li>  
+
+                    </div>
+                )
+            })}
+        
+        </div>
     );
 }
  

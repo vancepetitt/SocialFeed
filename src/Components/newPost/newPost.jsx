@@ -1,8 +1,9 @@
-const newPost = (props) => {
+const NewPost = (props) => {
     return ( 
         <form>
             <label for='userName'>Name: </label>
             <input type='text' name='userName'></input>
+            <br></br>
             <label for='postText'>Post: </label>
             <input type='text' name='postText'></input>
         </form>
@@ -10,4 +11,4 @@ const newPost = (props) => {
      );
 }
  
-export default newPost;
+export default NewPost;
