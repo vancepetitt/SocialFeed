@@ -1,28 +1,15 @@
 import React, { useState } from 'react';
+import displayPosts from './Components/displayPosts/displayPosts';
 
 
 function App() {
  
-  const [posts, setPosts] = useState([{name:'Vance', text: 'test'}])
-
-  // <h3>Create a new post:</h3>
-  // <a>Name</a>
-  // <input></input>
-  // <a>Text</a>
-  // <input></input>
+  const [posts, setPosts] = useState([{userName:'Vance', postText: 'test'}])
 
   return (
     <div>
-        <li>
-          {posts.map((post) => {
-            return (
-              <tr>
-                <td>{post.name}</td>
-                <td>{post.text}</td>
-              </tr>
-            )
-          })}
-        </li>
+      <newPost />
+      <displayPosts />
     </div>
   );
 }
