@@ -1,4 +1,6 @@
 const displayPosts = (props) => {
+
+
     return (  
         <div>
             <h1>Feed</h1>

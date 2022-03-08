@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
-import NewPost from './Components/NewPost/NewPost';
+import NewPost from './Components/NewPostForm/NewPostForm';
 
 
 function App() {
