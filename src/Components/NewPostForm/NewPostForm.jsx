@@ -11,7 +11,8 @@ const NewPostForm = (props) => {
             userName: userName,
             postText: postText,
         };
-        console.log(newPost)
+        console.log(newPost);
+        props.addNewPostProperty(newPost)
     }
 
     return ( 

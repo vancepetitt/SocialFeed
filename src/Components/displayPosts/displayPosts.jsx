@@ -4,14 +4,14 @@ const displayPosts = (props) => {
     return (  
         <div>
             <h1>Feed</h1>
-            {props.parentPosts.map((posts) => {
+            {props.parentPosts.map((post) => {
                 return (
                     <div>
                     <li>
-                       Username: {posts.userName}
+                       Username: {post.userName}
                     </li> 
                     <li>
-                       Post: {posts.postText}
+                       Post: {post.postText}
                     </li>  
 
                     </div>
