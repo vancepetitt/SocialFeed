@@ -1,13 +1,25 @@
-const displayPosts = (props) => {
+import React, { useState } from "react";
+import "./DisplayPosts.css"
 
+const DisplayPosts = (props) => {
+
+    const [buttonClass, setButtonClass] = useState('inactive');
 
     function changeToLike(event) {
-        alert('liked');
-    };
+        if(buttonClass === 'inactive'){
+            setButtonClass('liked')
+        }
+        else {
+            setButtonClass('inactive')
+        }}
 
     function changeToDislike(event) {
-        alert('dislike');
-    }
+        if(buttonClass === 'inactive'){
+            setButtonClass('disliked')
+        }
+        else {
+            setButtonClass('inactive')
+        }}
     
     return (  
         <div>
@@ -20,8 +32,8 @@ const displayPosts = (props) => {
                             <br></br> 
                             Post: {post.postText}
                             <br></br>
-                            <button onClick={changeToLike}>Like</button>
-                            <button onClick={changeToDislike}>Dislike</button>
+                            <button classname={buttonClass} onClick={changeToLike}>Like</button>
+                            <button classname={buttonClass} onClick={changeToDislike}>Dislike</button>
                         </li>  
                     </div>
                 )
@@ -31,4 +43,4 @@ const displayPosts = (props) => {
     );
 }
  
-export default displayPosts;
+export default DisplayPosts;

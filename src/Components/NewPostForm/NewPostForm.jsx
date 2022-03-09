@@ -6,7 +6,7 @@ const NewPostForm = (props) => {
     const [postText, setText] = useState('');
 
     function handleSubmit(event) {
-        event.preventDefault();
+        event.preventDefault(); //prevent page refresh when posting
         let newPost = {
             userName: userName,
             postText: postText,
