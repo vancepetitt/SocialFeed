@@ -12,7 +12,7 @@ const NewPostForm = (props) => {
             postText: postText,
         };
         console.log(newPost);
-        props.addNewPostProperty(newPost)
+        props.addNewPostProperty(newPost);
     }
 
     return ( 
