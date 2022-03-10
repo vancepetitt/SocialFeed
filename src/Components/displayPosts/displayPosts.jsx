@@ -9,18 +9,18 @@ const DisplayPosts = (props) => {
     
     return (  
         <div>
-            <h1>Feed</h1>
+            <h2>Feed (not food)</h2>
             {props.parentPosts.map((post) => {
                 return (
                     <div>
                         <li>
-                            Username: {post.userName}
-                            <br></br> 
-                            Post: {post.postText}
-                            <br></br>
-                            <p>{timeStamp}</p>
+                            <a>{timeStamp}</a>
+                            <h3>{post.userName}</h3>
+                            <p>{post.postText}
+                            <br></br></p>
                             <LikeButton />
                             <DislikeButton />
+                            <br></br>
                         </li>  
                     </div>
                 )

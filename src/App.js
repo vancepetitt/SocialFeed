@@ -5,10 +5,10 @@ import ".//styles.css"
 
 function App() {
  
-  const [posts, setPosts] = useState([{userName:'Vance', postText:'Feelin good this morning!'}])
+  const [posts, setPosts] = useState([{userName:'Al Gator', postText:'Feelin ornery because I got all these teeth, but no toothbrush!!!'}])
 
 
-  //the following function allows the child class to "invoke" the parent class 
+  //the following function allows the child class to pass information up to the parent class 
   function addNewPost(post) {
     
     let tempPosts = [post, ...posts];
@@ -19,8 +19,10 @@ function App() {
 
   return (
     <div> 
+      <h1 className='navbar'>GatorGossip</h1>
       <NewPostForm addNewPostProperty={addNewPost}/>
-      <DisplayPosts parentPosts={posts} />        
+      <DisplayPosts parentPosts={posts} /> 
+      <footer>GatorGossip - join the swamp!</footer>       
     </div>
   );
 }
