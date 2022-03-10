@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import NewPostForm from './Components/NewPostForm/NewPostForm';
+import LikeButton from './Components/Buttons/LikeButton';
+import DislikeButton from './Components/Buttons/DislikeButton';
 
 
 function App() {

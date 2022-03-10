@@ -1,25 +1,11 @@
 import React, { useState } from "react";
-import "./DisplayPosts.css"
+import DislikeButton from "../Buttons/DislikeButton";
+import LikeButton from "../Buttons/LikeButton";
+
 
 const DisplayPosts = (props) => {
 
-    const [buttonClass, setButtonClass] = useState('inactive');
-
-    function changeToLike(event) {
-        if(buttonClass === 'inactive'){
-            setButtonClass('liked')
-        }
-        else {
-            setButtonClass('inactive')
-        }}
-
-    function changeToDislike(event) {
-        if(buttonClass === 'inactive'){
-            setButtonClass('disliked')
-        }
-        else {
-            setButtonClass('inactive')
-        }}
+    let timeStamp = Date()
     
     return (  
         <div>
@@ -32,8 +18,9 @@ const DisplayPosts = (props) => {
                             <br></br> 
                             Post: {post.postText}
                             <br></br>
-                            <button classname={buttonClass} onClick={changeToLike}>Like</button>
-                            <button classname={buttonClass} onClick={changeToDislike}>Dislike</button>
+                            <p>{timeStamp}</p>
+                            <LikeButton />
+                            <DislikeButton />
                         </li>  
                     </div>
                 )
