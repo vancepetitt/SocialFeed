@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./Buttons.css";
 
+
 const LikeButton = (props) => {
     
     const [buttonClass, setButtonClass] = useState('inactive');
@@ -15,7 +16,7 @@ const LikeButton = (props) => {
             
     return(
         <div>
-            <button classname={buttonClass} onClick={changeToLike}>Like</button>
+            <button className={buttonClass} onClick={changeToLike}>Like</button>
         </div>
     );
 };

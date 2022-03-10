@@ -15,7 +15,7 @@ const DislikeButton = (props) => {
             
     return(
         <div>
-            <button classname={buttonClass} onClick={changeToDislike}>Dislike</button>
+            <button className={buttonClass} onClick={changeToDislike}>Dislike</button>
         </div>
     );
 };

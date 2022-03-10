@@ -1,0 +1,14 @@
+button{
+    background-color: white;
+}
+
+button.liked {
+    background-color: #009e60;
+    opacity: 70%;
+}
+
+
+button.disliked {
+    background-color: red;
+    
+}

@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import NewPostForm from './Components/NewPostForm/NewPostForm';
-import LikeButton from './Components/Buttons/LikeButton';
-import DislikeButton from './Components/Buttons/DislikeButton';
-
+import ".//styles.css"
 
 function App() {
  
-  const [posts, setPosts] = useState([{userName:'Vance', postText:'test text'}])
+  const [posts, setPosts] = useState([{userName:'Vance', postText:'Feelin good this morning!'}])
 
 
   //the following function allows the child class to "invoke" the parent class 
